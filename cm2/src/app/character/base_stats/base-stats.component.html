@@ -1,0 +1,76 @@
+<h3>Base Stats Component</h3>
+
+<div *ngIf="this.stats" class="container">
+  <label for="hp">hp</label>
+  <input [(ngModel)]="this.stats.hp" type="text" value="0" #hp>
+  <br>
+
+  <label for="speed">speed</label>
+  <input [(ngModel)]="this.stats.speed" type="text" value="0" #speed>
+  <br>
+
+  <label for="armor_bonus">armor_bonus</label>
+  <input [(ngModel)]="this.stats.armor_bonus" type="text" value="0" #armorBonus>
+  <br>
+
+  <label for="shield_bonus">shield_bonus</label>
+  <input [(ngModel)]="this.stats.shield_bonus" type="text" value="0" #shieldBonus>
+  <br>
+
+  <label for="dex_modifier">dex_modifier</label>
+  <input [(ngModel)]="this.stats.dex_modifier" type="text" value="0" #dexModifier>
+  <br>
+
+  <label for="size_modifier">size_modifier</label>
+  <input [(ngModel)]="this.stats.size_modifier" type="text" value="0" #sizeModifier>
+  <br>
+
+  <label for="natural_armor">natural_armor</label>
+  <input [(ngModel)]="this.stats.natural_armor" type="text" value="0" #naturalArmor>
+  <br>
+
+  <label for="misc_modifier">misc_modifier</label>
+  <input [(ngModel)]="this.stats.misc_modifier" type="text" value="0" #miscModifier>
+  <br>
+
+  <label for="miss_chance">miss_chance</label>
+  <input [(ngModel)]="this.stats.miss_chance" type="text" value="0" #missChance>
+  <br>
+
+  <label for="armor_check_penalty">armor_check_penalty</label>
+  <input [(ngModel)]="this.stats.armor_check_penalty" type="text" value="0" #armorCheckPenalty>
+  <br>
+
+  <label for="spell_resistance">spell_resistance</label>
+  <input [(ngModel)]="this.stats.spell_resistance" type="text" value="0" #spellResistance>
+  <br>
+
+  <label for="arcane_spell_failure">arcane_spell_failure</label>
+  <input [(ngModel)]="this.stats.arcane_spell_failure" type="text" value="0" #arcaneSpellFailure>
+  <br>
+
+  <label for="hit_die_type">hit_die_type</label>
+  <input [(ngModel)]="this.stats.hit_die_type" type="text" value="0" #hitDieType>
+  <br>
+
+  <label for="damage_reduction">damage_reduction</label>
+  <input [(ngModel)]="this.stats.damage_reduction" type="text" value="0" #damageReduction>
+  <br>
+
+  <label for="subdual_damage">subdual_damage</label>
+  <input [(ngModel)]="this.stats.subdual_damage" type="text" value="0" #subdualDamage>
+  <br>
+
+  <label for="wounds_current_HP">wounds_current_HP</label>
+  <input [(ngModel)]="this.stats.wounds_current_HP" type="text" value="0" #woundsCurrentHP>
+  <br>
+
+  <label for="base_attack_bonus">base_attack_bonus</label>
+  <input [(ngModel)]="this.stats.base_attack_bonus" type="text" value="0" #baseAttackBonus>
+  <br>
+
+  <label for="armor">armor_class</label>:&nbsp;&nbsp;&nbsp;&nbsp;<span>{{this.stats.armor_class()}}</span>
+  <br>
+  <label for="armor">initiative_modifier</label>:&nbsp;&nbsp;&nbsp;&nbsp;<span>{{this.stats.initiative_modifier()}}</span>
+
+</div>

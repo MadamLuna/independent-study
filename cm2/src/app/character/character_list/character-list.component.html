@@ -1,0 +1,19 @@
+<router-outlet></router-outlet>
+
+<h3>{{title}}</h3>
+<ul>
+  <li *ngFor="let character of characters">
+    <a [routerLink] = "['/character-info', character.name]">{{character.name}}</a>
+  </li>
+</ul>
+
+<input #charName (keyup.enter)="add(charName.value); charName.value=''"><br>
+<button (click)="add(charName.value); charName.value='';">+ Create Character</button>
+
+<!-- Don't know if this should go in a separate charcter.component -->
+<ul class = "characters">
+  <!-- should it be <li *ngFor... -->
+  <li [class.selected] = "character === selectedCharacter"
+   (click) = "onSelect(character)">
+  </li>
+</ul>

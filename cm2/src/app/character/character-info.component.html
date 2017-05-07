@@ -1,0 +1,38 @@
+<nav>
+<a *ngIf="this.character" [routerLink]="['character-details']">
+  Character Details
+</a>
+
+|
+<!-- 5-5-2017 5:37 PM change: comment out character.name in "['base-stats', <here>]" -->
+<a *ngIf="this.character" [routerLink]="['base-stats' ]"> 
+  Base Stats
+</a>
+
+|
+
+<a *ngIf="this.character" [routerLink]="['feats-abilities']">
+  Feats &amp; Abilities
+</a>
+
+|
+<!-- 5-5-2017 5:37 PM change: add " *ngIf = "this.character" -->
+<a [routerLink]="['possessions']">
+  Possessions
+</a>
+
+|
+<!-- 5-5-2017 5:37 PM change: add " *ngIf = "this.character" -->
+<a [routerLink]="['skills']">
+  Skills
+</a>
+
+|
+
+<a [routerLink]="['spells']">
+  Spells
+</a>
+
+|
+</nav>
+<router-outlet></router-outlet>
