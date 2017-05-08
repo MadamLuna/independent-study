@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @character.status %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @character.level %>
+</p>
+
+<p>
+  <strong>Xp:</strong>
+  <%= @character.xp %>
+</p>
+
+<p>
+  <strong>Character class:</strong>
+  <%= @character.character_class %>
+</p>
+
+<p>
+  <strong>Race:</strong>
+  <%= @character.race %>
+</p>
+
+<p>
+  <strong>Alignment:</strong>
+  <%= @character.alignment %>
+</p>
+
+<p>
+  <strong>Deity:</strong>
+  <%= @character.deity %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @character.size %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @character.age %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @character.gender %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @character.height %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @character.weight %>
+</p>
+
+<p>
+  <strong>Eyes:</strong>
+  <%= @character.eyes %>
+</p>
+
+<p>
+  <strong>Hair:</strong>
+  <%= @character.hair %>
+</p>
+
+<%= link_to 'Edit', edit_character_path(@character) %> |
+<%= link_to 'Back', characters_path %>
