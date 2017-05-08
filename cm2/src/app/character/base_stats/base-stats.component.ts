@@ -24,14 +24,14 @@ export class BaseStatsComponent implements OnInit {
 
   ngOnInit() {
     let name = this.route.snapshot.params['name'];
-   this.route.params.switchMap((params: Params) =>  // 5-5-2017 change: uncomment
+  // this.route.params.switchMap((params: Params) =>  // 5-5-2017 change: uncomment
     this.characterService.getCharacter(name)
       .then(character => {
         console.log(character);
         this.character = character;
         this.stats = this.character.base_stats;
         console.log(this.stats);
-      }));
+      });
     console.log(name);
   }
 

@@ -32,7 +32,7 @@ import { SpellsComponent } from './character/spells/spells.component';
 const routes: Routes = [
   // Default Component Paths
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-
+ 
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
 
@@ -44,7 +44,7 @@ const routes: Routes = [
       // cause: 'feats' and 'base stats' no longer visible, 
       // could click on 'character details'
        { path: 'character-details', component: CharacterDetailsComponent },
-       { path: 'base-stats', component: BaseStatsComponent },
+       { path: 'base-stats/:name', component: BaseStatsComponent },
        { path: 'feats-abilities', component: FeatsAbilitiesComponent },
        { path: 'possessions', component: PossessionsComponent },
        { path: 'skills', component: SkillsComponent },
