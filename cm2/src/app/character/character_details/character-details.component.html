@@ -1,1 +1,56 @@
-<h1>Character Details Component</h1>
+<h3>Character Details Component</h3>
+
+<div *ngIf="this.characterDetail" class="form">
+    <label for="status"> status </label>
+    <input [(ngModel)] = "this.characterDetail.status" type="text" value="0" #status>
+    <br>
+
+    <label for="experience"> experience </label>
+    <input [(ngModel)] = "this.characterDetail.experience" type="text" value="0" #experience>
+    <br>
+
+    <label for="character_class"> character_class </label>
+    <input [(ngModel)] = "this.characterDetail.character_class" type="text" value="0" #characterClass>
+    <br>
+
+    <label for="race"> race </label>
+    <input [(ngModel)] = "this.characterDetail.race" type="text" value="0" #race>
+    <br>
+
+    <label for="alignment"> alignment </label>
+    <input [(ngModel)] = "this.characterDetail.alignment" type="text" value="0" #alignment>
+    <br>
+
+    <label for="deity"> deity </label>
+    <input [(ngModel)] = "this.characterDetail.deity" type="text" value="0" #deity>
+    <br>
+
+    <label for="size"> size </label>
+    <input [(ngModel)] = "this.characterDetail.size" type="text" value="0" #size>
+    <br>
+
+    <label for="age"> age </label>
+    <input [(ngModel)] = "this.characterDetail.age" type="text" value="0" #age>
+    <br>
+
+    <label for="gender"> gender </label>
+    <input [(ngModel)] = "this.characterDetail.gender" type="text" value="0" #gender>
+    <br>
+
+    <label for="height"> height </label>
+    <input [(ngModel)] = "this.characterDetail.height" type="text" value="0" #height>
+    <br>
+
+    <label for="weight"> weight </label>
+    <input [(ngModel)] = "this.characterDetail.weight" type="text" value="0" #weight>
+    <br>
+
+    <label for="eyes"> eyes </label>
+    <input [(ngModel)] = "this.characterDetail.eyes" type="text" value="0" #eyes>
+    <br>
+
+    <label for="hair"> hair </label>
+    <input [(ngModel)] = "this.characterDetail.hair" type="text" value="0" #hair>
+    <br>
+
+</div>

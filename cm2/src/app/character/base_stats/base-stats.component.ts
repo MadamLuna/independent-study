@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+
 import { BaseStat } from './BaseStatsClass';
 import { Character } from '../CharacterClass';
 import { CharacterService } from '../character_list/character-list.service';
@@ -16,11 +17,11 @@ import { CharacterService } from '../character_list/character-list.service';
 export class BaseStatsComponent implements OnInit {
   stats: BaseStat;
   character: Character;
+
   constructor(
     private route: ActivatedRoute,
     private characterService: CharacterService
-  ) {
-  }
+  ) {}
 
   ngOnInit() {
     let name = this.route.snapshot.params['name'];

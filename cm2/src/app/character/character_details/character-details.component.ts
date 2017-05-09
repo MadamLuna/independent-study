@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActivatedRoute, Params } from '@angular/router';
 
+import { CharacterDetail } from './CharacterDetailClass'; 
 import { CharacterService } from '../character_list/character-list.service';
 import { Character } from '../CharacterClass';
 
@@ -15,6 +16,7 @@ import { Character } from '../CharacterClass';
 
 // 5-5-2017 4:40 PM: Change: added "implements OnInit"
 export class CharacterDetailsComponent implements OnInit{
+  characterDetail: CharacterDetail; 
   character: Character;
 
   constructor(
@@ -22,9 +24,20 @@ export class CharacterDetailsComponent implements OnInit{
     private route: ActivatedRoute
   ) {}
 
-  ngOnInit(): void {
-    this.route.params.switchMap((params: Params) =>
+  ngOnInit() {
+ /*   this.route.params.switchMap((params: Params) =>
       this.characterService.getCharacter(params['name']))
           .subscribe(character => this.character = character);
+ */ 
+    let name = this.route.snapshot.params['name'];
+
+    this.characterService.getCharacter(name)
+      .then(character => {
+        console.log(character); 
+        this.character = character; 
+        this.characterDetail = this.character.details; 
+        console.log(this.characterDetail);
+      })
+      console.log(name);
   }
 }

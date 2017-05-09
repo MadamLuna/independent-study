@@ -43,8 +43,8 @@ const routes: Routes = [
       // 7:01 pm 5/2, change: 'character-details/', 'base-stats/'
       // cause: 'feats' and 'base stats' no longer visible, 
       // could click on 'character details'
-       { path: 'character-details', component: CharacterDetailsComponent },
-       { path: 'base-stats/:name', component: BaseStatsComponent },
+       { path: 'character-details/:name', component: CharacterDetailsComponent },
+       { path: 'base-stats/:name', component: BaseStatsComponent },           // 4:00 pm 5/8/2017 change: added ":name"
        { path: 'feats-abilities', component: FeatsAbilitiesComponent },
        { path: 'possessions', component: PossessionsComponent },
        { path: 'skills', component: SkillsComponent },

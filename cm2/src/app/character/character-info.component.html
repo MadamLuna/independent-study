@@ -1,5 +1,5 @@
 <nav>
-<a *ngIf="this.character" [routerLink]="['character-details']">
+<a *ngIf="this.character" [routerLink]="['character-details', character.name ]">
   Character Details
 </a>
 

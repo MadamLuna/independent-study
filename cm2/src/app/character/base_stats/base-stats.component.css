@@ -1,4 +1,16 @@
-
-.container {
-  width: 500px !important;
+.form {
+    width: 500px !important;
 }
+/*
+.form input {
+   /* input 
+   display: block;
+   margin-bottom: 1em;
+} 
+
+.form label {
+   /* label 
+   float: left;
+   margin-right: 0.5em;
+}
+*/
