@@ -1,6 +1,6 @@
 <h3>Base Stats Component</h3>
 
-<div *ngIf="this.stats" class="container">
+<div *ngIf="this.stats" class="form">
   <label for="hp">hp</label>
   <input [(ngModel)]="this.stats.hp" type="text" value="0" #hp>
   <br>
@@ -71,6 +71,8 @@
 
   <label for="armor">armor_class</label>:&nbsp;&nbsp;&nbsp;&nbsp;<span>{{this.stats.armor_class()}}</span>
   <br>
+
   <label for="armor">initiative_modifier</label>:&nbsp;&nbsp;&nbsp;&nbsp;<span>{{this.stats.initiative_modifier()}}</span>
+  <br>
 
 </div>

@@ -11,5 +11,5 @@ import { Router } from '@angular/router';
 
 
 export class SkillsComponent {
-    
+    title: string = "Skills"; 
 }
