@@ -1,56 +1,65 @@
-<h3>Character Details Component</h3>
 
-<div *ngIf="this.characterDetail" class="form">
-    <label for="status"> status </label>
-    <input [(ngModel)] = "this.characterDetail.status" type="text" value="0" #status>
-    <br>
+ <body>
+  
+    <style>     
+        @import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC');
+    </style>
 
-    <label for="experience"> experience </label>
-    <input [(ngModel)] = "this.characterDetail.experience" type="text" value="0" #experience>
-    <br>
+    <!-- <h3 class="header">Character Details Component</h3> -->
+    
+    <div *ngIf="this.characterDetail" class="form">
+        <br>
+        <label for="status"> STATUS </label>
+        <input [(ngModel)] = "this.characterDetail.status" type="text" value="0" #status>
+        <br>
 
-    <label for="character_class"> character_class </label>
-    <input [(ngModel)] = "this.characterDetail.character_class" type="text" value="0" #characterClass>
-    <br>
+        <label for="experience"> EXPERIENCE </label>
+        <input [(ngModel)] = "this.characterDetail.experience" type="text" value="0" #experience>
+        <br>
 
-    <label for="race"> race </label>
-    <input [(ngModel)] = "this.characterDetail.race" type="text" value="0" #race>
-    <br>
+        <label for="character_class"> CHARACTER CLASS </label>
+        <input [(ngModel)] = "this.characterDetail.character_class" type="text" value="0" #characterClass>
+        <br>
 
-    <label for="alignment"> alignment </label>
-    <input [(ngModel)] = "this.characterDetail.alignment" type="text" value="0" #alignment>
-    <br>
+        <label for="race"> RACE </label>
+        <input [(ngModel)] = "this.characterDetail.race" type="text" value="0" #race>
+        <br>
 
-    <label for="deity"> deity </label>
-    <input [(ngModel)] = "this.characterDetail.deity" type="text" value="0" #deity>
-    <br>
+        <label for="alignment"> ALIGNMENT </label>
+        <input [(ngModel)] = "this.characterDetail.alignment" type="text" value="0" #alignment>
+        <br>
 
-    <label for="size"> size </label>
-    <input [(ngModel)] = "this.characterDetail.size" type="text" value="0" #size>
-    <br>
+        <label for="deity"> DEITY </label>
+        <input [(ngModel)] = "this.characterDetail.deity" type="text" value="0" #deity>
+        <br>
 
-    <label for="age"> age </label>
-    <input [(ngModel)] = "this.characterDetail.age" type="text" value="0" #age>
-    <br>
+        <label for="size"> SIZE </label>
+        <input [(ngModel)] = "this.characterDetail.size" type="text" value="0" #size>
+        <br>
 
-    <label for="gender"> gender </label>
-    <input [(ngModel)] = "this.characterDetail.gender" type="text" value="0" #gender>
-    <br>
+        <label for="age"> AGE </label>
+        <input [(ngModel)] = "this.characterDetail.age" type="text" value="0" #age>
+        <br>
 
-    <label for="height"> height </label>
-    <input [(ngModel)] = "this.characterDetail.height" type="text" value="0" #height>
-    <br>
+        <label for="gender"> GENDER </label>
+        <input [(ngModel)] = "this.characterDetail.gender" type="text" value="0" #gender>
+        <br>
 
-    <label for="weight"> weight </label>
-    <input [(ngModel)] = "this.characterDetail.weight" type="text" value="0" #weight>
-    <br>
+        <label for="height"> HEIGHT </label>
+        <input [(ngModel)] = "this.characterDetail.height" type="text" value="0" #height>
+        <br>
 
-    <label for="eyes"> eyes </label>
-    <input [(ngModel)] = "this.characterDetail.eyes" type="text" value="0" #eyes>
-    <br>
+        <label for="weight"> WEIGHT </label>
+        <input [(ngModel)] = "this.characterDetail.weight" type="text" value="0" #weight>
+        <br>
 
-    <label for="hair"> hair </label>
-    <input [(ngModel)] = "this.characterDetail.hair" type="text" value="0" #hair>
-    <br>
+        <label for="eyes"> EYES </label>
+        <input [(ngModel)] = "this.characterDetail.eyes" type="text" value="0" #eyes>
+        <br>
 
-</div>
+        <label for="hair"> HAIR </label>
+        <input [(ngModel)] = "this.characterDetail.hair" type="text" value="0" #hair>
+        <br>
+    </div>
+    
+</body>

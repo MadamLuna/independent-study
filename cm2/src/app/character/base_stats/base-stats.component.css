@@ -1,3 +1,61 @@
- .form {
-    width: 500px !important;
+
+body {
+    /* Background Image */
+    background-image: url("http://i.imgur.com/NC5xWLi.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+
+    /* Font */
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+.form label {
+    /* Allignment */
+    display: block; 
+    width: 130px; 
+    margin: 0px 10px 10px 10px;
+
+    float: left;
+    padding: 5px;
+}
+
+.form input {
+    /* Block Alignment */
+    display: block; 
+    width: 130px; 
+    margin: 0px 10px 10px 10px;
+
+    /* Block Style Formatting */
+    border-radius: 5px;
+    border: 1px solid #874c18;
+    padding: 5px;
+    outline: none;
+    
+    /* Block Color */
+    color: #000;
+    background-color: rgba(242, 225, 159, 0.25);
+
+    /* Text Alignment */
+    text-align: center;
+}
+
+.form span {
+    /* Block Alignment */
+    display: inline-block; 
+    width: 130px; 
+    margin: 0px 10px 30px -20px;
+    
+
+    /* Block Style Formatting */
+    border-radius: 5px;
+    border: 1px solid #874c18;
+    padding: 5px;
+    outline: none;
+    
+    /* Block Color */
+    color: #000;
+    background-color: rgba(242, 225, 159, 0.25);
+
+    /* Text Alignment */
+    text-align: center;
 }

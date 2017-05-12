@@ -1,25 +1,51 @@
 
+/*
+Google fonts: Yatra One, Kotta One, IM Fell English SC,
+              IM Fell DW Pica, Scheherazade, Fondamento
+
+              NOTE: Font isn't working!
+*/
+
+/*
+.header {
+    margin: 30px 30px 30px 20px;
+}
+*/
+
+body {
+    /* Background Image */
+    background-image: url("http://i.imgur.com/NC5xWLi.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+
+    /* Font */
+    font-family: 'IM Fell DW Pica', serif;
+    src: url("https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica");
+}
 
 .form label {
-    /* label */
+    /* Allignment */
     display: block; 
-    margin-bottom: 10px;
-    margin: 0px 0px 10px 0px;
+    width: 180px; 
+    margin: 0px 10px 10px 10px;
 
-    border-radius: 5px;
-    outline: none;
-    width: 20%; 
+    float: left;
+    padding: 5px;
 }
 
 .form input {
-    /* label */
+     /* Block Alignment */
     display: block; 
-    margin-bottom: 10px;
-    margin: 0px 0px 10px 0px;
+    width: 200px; 
+    margin: 0px 10px 10px 10px;
 
+    /* Block Style Formatting */
     border-radius: 5px;
-    border: 1px solid #000;
-    padding: 5px 8px 5px 8px;
+    border: 1px solid #874c18;
+    padding: 5px;
     outline: none;
-    width: 50%; 
+    
+    /* Block Color */
+    color: #000;
+    background-color: rgba(242, 225, 159, 0.25);
 }

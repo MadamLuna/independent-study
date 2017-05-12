@@ -32,15 +32,15 @@ export class Skill {
     */ 
 
        // TO DO: Should it be "Skill[]"?
-       public skill_list_element: { skill_name: string, 
+       let skill_list_element: { skill_name: string, 
                                     key_ability: string, 
                                     skill_modifier: number, 
                                     ability_modifier: number, 
                                     ranks: number, 
                                     misc_modifier: number } [] = 
        [
-            
-       ]
+            { skill_name: 'bob', key_ability: 'h', }
+       ];
        
 }
 
