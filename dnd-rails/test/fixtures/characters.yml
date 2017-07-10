@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: 
+  level: 
+  xp: 
+  character_class: 
+  race: 
+  alignment: 
+  deity: 
+  size: 
+  age: MyString
+  integer,: MyString
+  gender: 
+  height: 
+  weight: 
+  eyes: 
+  hair: MyString
+
+two:
+  status: 
+  level: 
+  xp: 
+  character_class: 
+  race: 
+  alignment: 
+  deity: 
+  size: 
+  age: MyString
+  integer,: MyString
+  gender: 
+  height: 
+  weight: 
+  eyes: 
+  hair: MyString
